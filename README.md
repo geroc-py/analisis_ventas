@@ -1,39 +1,39 @@
-Análisis de Ventas Comerciales – TUP 2026
-Cátedra: Organización Empresarial
-Institución: Universidad Tecnológica Nacional – TUP
-Año lectivo: 2026
+A# Análisis de Ventas - UTN TUPaD 2026
 
-Integrantes del equipo
-Rol	Nombre	Responsabilidad
-P1 – Líder	Hugo	Repositorio, estructura y README
-P2 – Desarrollador	Paco	Script de análisis y dataset
-P3 – Revisor QA	Luis	Peer review y merge del PR
-Escenario elegido
-Escenario B – Análisis de Ventas de una Pequeña Empresa.
+## Integrantes
+- Gerónimo José Cardoso
+Comisión N° 13
 
-Dataset
-Archivo: datos/ventas.csv. Dataset simulado de ventas 2024 con columnas: id, fecha, producto, cantidad, precio_unitario.
+## Escenario
+Escenario B — Análisis de ventas de una pequeña empresa.
 
-Resultados generados
-resultados/resumen_mensual.csv – ventas por mes
-resultados/grafico_ventas.png – evolución de ventas
-Cómo ejecutar el script
-Requisitos
-Python 3.8+
-pandas
-matplotlib
-Instalación de dependencias
-pip install pandas matplotlib
-Ejecución local
-cd scripts
-python analisis_ventas.py
-Ejecución en Google Colab
-!git clone https://github.com/ventricef012-ai/analisis-ventas-tup2026.git
-%cd analisis-ventas-tup2026/scripts
-!pip install pandas matplotlib
-!python analisis_ventas.py
-Trazabilidad Jira
-Issue	Descripción
-SCRUM-1	Estructura del repositorio
-SCRUM-2	Script de análisis de ventas
-SCRUM-3	Revisión QA y documentación
+## Dataset
+Dataset de ventas simuladas obtenido de GitHub Gist.
+Contiene registros diarios de ventas con las columnas:
+- id: identificador del registro
+- sales_date: fecha de la venta
+- sales_amount: monto de la venta en pesos
+
+Fuente: https://gist.github.com/khanusama20/ee33c2869dd5cf3cebdf020be1ca43f6
+
+## Estructura del repositorio
+repo/
+├── datos/             # Dataset en formato CSV
+├── scripts/           # Script de análisis en Python
+├── resultados/        # Gráficos y resultados generados
+├── README.md
+└── .gitignore
+
+## Cómo ejecutar el script
+1. Clonar el repositorio en Google Colab
+2. Asegurarse de que el dataset esté en datos/dataset.csv
+3. Ejecutar scripts/analisis_ventas.py
+4. Los resultados se guardan automáticamente en resultados/
+
+## Tecnologías utilizadas
+- Python 3
+- pandas
+- matplotlib
+- Google Colab
+- Git y GitHub
+- Jira
